@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Profiles from './profiles'
 
 export default function Home() {
   return (
@@ -15,7 +16,12 @@ export default function Home() {
         <h1 ><b className="doom">MF DOOM FM</b> </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+         Start listening with other fans 
+          <a
+            href="https://www.patreon.com/user?u=23079387"
+            className="buttonred"
+          >Patreon</a>
+         
         </p>
 
         <div className="grid">
@@ -28,15 +34,15 @@ export default function Home() {
           <a href="https://nextjs.org/learn" className="card">
             <p className="button">Login  
             <img src="/spot.svg"  alt="button"/> </p>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <p>Start chatting </p>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
+            href="https://www.patreon.com/user?u=23079387"
             className="card"
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <Profiles/>
+            <p><b>50,123 </b>  Currently Listening</p>
           </a>
 
           <a
@@ -112,6 +118,17 @@ export default function Home() {
            width: 20px;
          } 
 
+         .buttonred {
+          background: #f22170;
+          color: #fff;
+          padding: 8px;
+          justify-content: center;
+          text-align: center;
+          border-radius: 16px;
+          display: flex;
+          width: 200px;
+          }
+
          .doom {
           margin: 0;
           line-height: 1.15;
@@ -172,6 +189,12 @@ export default function Home() {
 
         .vynil {
           width: 50%;
+          padding: 4px;
+        }
+
+        .login {
+          justify-content-between;
+          padding: 4px;
         }
 
         .card {
