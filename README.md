@@ -1,1 +1,3 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Collaborative Listening With Spotify 
+
+![img](public/listen.png)
