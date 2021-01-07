@@ -126,7 +126,7 @@ export default function Home() {
           text-align: center;
           border-radius: 16px;
           display: flex;
-          width: 200px;
+          width: 150px;
           }
 
          .doom {
