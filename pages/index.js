@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Profiles from './profiles'
+import Login from './home'
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Listen Together 
+         <b>Listen Together </b> 
         </h1>
         <h1 ><b className="doom">MF DOOM FM</b> </h1>
 
@@ -30,12 +31,12 @@ export default function Home() {
             <h3>MF DOOM </h3>
             <p>Currently Playing Hooks</p>
           </a>
+         
 
-          <a href="https://nextjs.org/learn" className="card">
-            <p className="button">Login  
-            <img src="/spot.svg"  alt="button"/> </p>
-            <p>Start chatting </p>
-          </a>
+          <div className="card center">
+         
+            <Login/>
+          </div>
 
           <a
             href="https://www.patreon.com/user?u=23079387"
@@ -48,8 +49,7 @@ export default function Home() {
           <a
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className="card"
-          >
-            <h3>Deploy &rarr;</h3>
+          >  <h3>Deploy &rarr;</h3>
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
@@ -133,6 +133,7 @@ export default function Home() {
           margin: 0;
           line-height: 1.15;
           font-size: 4rem;
+          margin-top: 2px;
         }
 
         .title a {
@@ -182,7 +183,6 @@ export default function Home() {
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
-
           max-width: 800px;
           margin-top: 3rem;
         }
