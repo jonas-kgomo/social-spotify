@@ -1,6 +1,10 @@
-# Realtime chat example using Supabase
+# Realtime Listening Room
 
-This is a full-stack Slack clone example using:
+Collaborative Listening With Spotify 
+
+
+![img](public/listen.png)	![img](public/listen.png)
+
 
 - Frontend:
   - Next.js.
@@ -10,11 +14,8 @@ This is a full-stack Slack clone example using:
 
 ## Demo
 
-- Live demo: http://supabase-slack-clone.supabase.vercel.app/
-- CodeSandbox: https://codesandbox.io/s/github/supabase/supabase/tree/master/examples/nextjs-slack-clone
-- Video tutorial: https://www.loom.com/share/31eec9b656e44b8d87c88bde8a465676
+Coming soon
 
-![Demo animation gif](./public/slack-clone-demo.gif)
 
 ## Deploy your own
 
@@ -94,23 +95,6 @@ NEXT_PUBLIC_SUPABASE_URL=<replace-with-your-API-url>
 NEXT_PUBLIC_SUPABASE_KEY=<replace-with-your-anon-key>
 ```
 
-### Change authentication settings if necessary
-
-Follow [Step #5](#5-change-authentication-settings-if-necessary) above if you want to change the auth settings.
-
-### Run the development server
-
-Now install the dependencies and start the development server.
-
-```bash
-npm install
-npm run dev
-# or
-yarn
-yarn dev
-```
-
-Visit http://localhost:3000 and start chatting! Open a channel across two browser tabs to see everything getting updated in realtime 🥳
 
 ## Supabase details
 
@@ -158,9 +142,3 @@ CREATE POLICY "Allow logged-in read access" on public.messages USING ( auth.role
 CREATE POLICY "Allow individual insert access" on public.messages FOR INSERT WITH CHECK ( auth.uid() = user_id );
 CREATE POLICY "Allow individual update access" on public.messages FOR UPDATE USING ( auth.uid() = user_id );
 ```
-
-## Authors
-
-- [Supabase](https://supabase.io)
-
-Supabase is open source, we'd love for you to follow along and get involved at https://github.com/supabase/supabase
