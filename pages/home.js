@@ -62,7 +62,7 @@ const Login = () => {
               href={'/channels'}
               className="bg-black rounded-lg  hover:bg-teal text-white py-2 px-4 rounded text-center transition duration-150 hover:bg-gray-600 hover:text-white"
             >
-              Add Username
+              Add User-Name
             </a>
           
             <a
@@ -71,11 +71,12 @@ const Login = () => {
                 handleLogin('LOGIN', username, password)
               }}
               href={'/channels'}
-              className="flex rounded-lg py-2 px-4 items-center rounded w-full text-center transition duration-150 text-gray-100  hover:bg-gray-200 bg-black hover:text-gray-800"
+              className=" rounded-lg px-4 items-center rounded w-full text-center transition duration-150 text-gray-100  hover:bg-gray-200 bg-black hover:text-gray-800"
             >
-              Login 
-            <img src="/spot.svg" className="mx-4 px-2 w-10 h-10"  alt="button"/> 
-            </a>
+             <div className="flex justify-center"><p className="py-2">Login</p>
+            <img src="/spot.svg" className="mx-2 px-2 w-10 h-10"  alt="button"/> 
+           
+               </div>  </a>
           </div>
         </div>
       </div>

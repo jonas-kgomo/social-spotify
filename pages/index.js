@@ -4,7 +4,7 @@ import Login from './home'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="">
       <Head>
         <title>Social Listen</title>
         <link rel="icon" href="/favicon.ico" />
@@ -19,8 +19,8 @@ export default function Home() {
         <p className="description">
          Start listening with other fans 
           <a
-            href="https://www.patreon.com/user?u=23079387"
-            className="buttonred"
+            href="https://www.patreon.com/mfdoomstream"
+            className="buttonred justify-center mx-auto"
           >Patreon</a>
          
         </p>
@@ -64,14 +64,7 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+
 
         main {
           padding: 5rem 0;

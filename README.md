@@ -3,7 +3,7 @@
 Collaborative Listening With Spotify 
 
 
-![img](public/listen.png)	![img](public/listen.png)
+![img](public/listen.png)	
 
 
 - Frontend:
